@@ -1,0 +1,18 @@
+{
+  "name": "fronts",
+  "version": "1.0",
+  "description": "Google Fronts System",
+  "main": "googleFront.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": ["fronts","web"],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
