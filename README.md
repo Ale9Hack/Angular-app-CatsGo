@@ -1,2 +1,3 @@
-Setup: run
-$ bower install and node install
+<h2>Setup</h2>
+<p>run</p>
+<p>$ bower install && node install</p>
