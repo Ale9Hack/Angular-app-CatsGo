@@ -1,0 +1,52 @@
+<div id="mainView">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div  ng-repeat='slide in slides' class="{{slide.active}}" >
+          <img ng-src="{{slide.image}}" class="img-responsive" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>{{slide.title}}</h1>
+              <p>{{slide.text}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+  
+    </div>
+
+      <!-- /.carousel -->
+<div class="jumbotron"> 
+<h2>CatsGO</h2>
+<p>En esta pagina podran encontrar muchas fotos y frases de gatitos.</p>
+<p><a class="btn btn-lg btn-primary" id='mainBotton' href="#/gallery" role="button">Ver Galeria</a></p>
+</div>    
+
+
+<div class="container-fluid" id="thumbnail-block">
+<div class="row">
+  <div class="col-sm-12 col-md-4 col-lg-4"  ng-repeat='thumbnail in thumbnails'>
+    <div class="thumbnail" >
+      <img class="img-responsive" ng-src='{{thumbnail.image}}'>
+      <div class="caption">
+        <h3 class="thumbnail-text">{{thumbnail.title}}</h3>
+        <p class="thumbnail-text">{{thumbnail.quote}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center"> 
+<button class="btn btn-lg btn-primary" role="button" id='secondaryBotton' ng-click='onReset()'>Ver otras imagenes</button>
+</div>    
+
+</div>
+</div>

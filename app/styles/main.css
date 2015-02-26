@@ -1,0 +1,211 @@
+/* Space out content a bit */
+
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.textTest{
+  color:red;
+font-family: 'Fontdiner Swanky', cursive;
+}
+
+
+
+.navbar-footer-fixed {
+  margin-top: 50px;
+  /*margin-bottom: 60px; */
+
+}
+
+.navbar-footer-fixed:after {
+  content: "";
+  display: block;
+}
+
+
+/* Custom page footer */
+.footer {
+  padding-top: 15px;
+  position: fixed;
+  width:100%;
+  bottom:0;
+  left:0;
+  background-color: #000000;
+  color: #777;
+}
+
+#mainView{
+  margin-bottom: 60px;
+}
+
+/* custom thumbnail */
+#thumbnail-block{
+
+}
+
+.thumbnail{
+  background-color: #DBDBDB;
+  border-width: 1px;
+  border-radius: 3px;
+  border-color: #ACACAC;
+  -webkit-box-shadow: 0px -4px 35px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px -4px 35px 0px rgba(0,0,0,1);
+  box-shadow: 0px -4px 35px 0px rgba(0,0,0,1);
+}
+
+.thumbnail-text{
+  font-family: 'Fontdiner Swanky';
+
+}
+
+
+
+
+@media (min-width:992px) {
+
+
+
+}
+
+     #galleryView{
+       height: 900px;
+    }
+
+
+    #owl-carousel-gallery .owl-item img{
+    display: block;
+    width: 100%;
+    height: 500px;
+    }
+
+.quotesText{
+  font-family: 'Quantico', cursive;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+@media (min-width:200px) {
+.carousel {
+  height: 200px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 200px;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 200px;
+}
+}
+
+@media (min-width: 992px) {
+.carousel {
+  height: 400px;
+  margin-top: 50px;
+
+
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+}
+}
+
+/******************************************************************/
+
+
+.navbar{
+  margin-bottom: 0px;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
